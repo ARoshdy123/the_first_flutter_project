@@ -1,6 +1,15 @@
 # the_first_flutter_project
 
-A new Flutter project that used appbar and added two images.
+This Flutter app displays:
+
+- A title using an AppBar.
+- Two images: one from assets and one from the internet.
+- A customized text below the images.
+
+## Features
+- Separate widget files for better code structure.
+- Customized text with specific font, size, color, and weight.
+
 
 ## Flutter
 The flutter version used Flutter 3.24.5

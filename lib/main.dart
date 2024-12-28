@@ -1,36 +1,31 @@
 import 'package:flutter/material.dart';
+import 'images.dart';
+import 'custom_text.dart';
 
 void main() {
-  runApp(TheFirstFlutterProject());
+  runApp(FirstFlutterProject());
 }
 
-class TheFirstFlutterProject extends StatelessWidget {
+class FirstFlutterProject extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Screenshot of the used command"),
+          title: const Text("My First Project"),
         ),
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Image.asset(
-              'assets/1.png',
-            ),
-            const SizedBox(height: 20),
-            const Center(
-              child: Text(
-                'Secound Image',
-                style: TextStyle(fontSize: 22),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const ViewImages(),
+              const SizedBox(
+                height: 10,
               ),
-            ),
-            const SizedBox(height: 20),
-            Image.asset(
-              'assets/2.png',
-            ),
-          ],
+              CustomText(),
+            ],
+          ),
         ),
       ),
     );
